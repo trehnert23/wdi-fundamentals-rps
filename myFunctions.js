@@ -1,5 +1,6 @@
 /* Temperature Calculator
 
+
 var temp = process.argv.slice(2);
 
 if ((temp>60) && (temp<80)) {
