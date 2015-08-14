@@ -1,0 +1,41 @@
+.shout {
+	text-transform: uppercase;
+}
+
+.shadow {
+	text-shadow: 10px 10px #888888;
+}
+
+.invert {
+	transform: rotate(180deg);
+}
+
+.red-background {
+	background-color: red;
+}
+
+.blue-background {
+	background-color: blue;
+}
+
+.purple-background {
+	background-color: purple;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+.half {
+	font-size: .5px;
+}
+
+section.center {
+	position: relative;
+}
+
+section.center p {
+	position: absolute;
+}

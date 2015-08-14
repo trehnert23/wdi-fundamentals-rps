@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="racing_game.css"/>
+		<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js'></script>
+		<script type="text/javascript" src='racing_game.js'></script>
+		<title>Basic Game</title>
+	</head>
+	<body>
+		<div class="grass">
+			<div class="field">
+				<div class="lane1">
+					<div class="player1text"><b>PLAYER 1</b></div>
+					<div class="player1"></div>
+				</div>
+				<div class="lane2">
+					<div class="player2text"><b>PLAYER 2</b></div>
+					<div class="player2"></div>
+				</div>
+			</div>
+			<div class="start"><b>START</b></div>
+			<div class="finish"><b>FINISH</b></div>
+		</div>
+		<script> function raceFunction() {
+			$(".player1").css('margin-left', '2em');
+		}
+		</script>
+		<button class="button" type="button" onclick="raceFunction()">RACE!</button>
+	</body>
+</html>
