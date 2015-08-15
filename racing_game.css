@@ -4,6 +4,7 @@
 	background-color: green;
 	border: solid brown .5em;
 	border-radius: 10%;
+	box-shadow: inset -15px -15px 40px rgba(0,0,0,.5);
 }
 
 .field {
@@ -24,6 +25,7 @@
 	-webkit-transform: rotate(-90deg);
 	margin-top: 1.9em;
 	margin-left: -1.1em;
+	text-shadow: -2px -2px 1px #000;
 }
 
 .finish {
@@ -33,6 +35,8 @@
 	-webkit-transform: rotate(90deg);
 	margin-top: 1.9em;
 	margin-left: 7.65em;
+	text-shadow: -2px -2px 1px #000;
+
 }
 
 .lane1 {
@@ -43,6 +47,7 @@
 	margin-left: 2em;
 	margin-top: 5em;
 	border: solid white .3em;
+	box-shadow: inset -15px -15px 40px rgba(0,0,0,.5);
 }
 
 .lane2 {
@@ -53,6 +58,7 @@
 	margin-left: 2em;
 	margin-top: 20em;
 	border: solid white .3em;
+	box-shadow: inset -15px -15px 40px rgba(0,0,0,.5);
 }
 
 .player1text {
@@ -73,7 +79,7 @@
 	margin-left: 3em;
 }
 
-.player1 {
+#player1 {
 	z-index: 1;
 	background-color: blue;
 	border-radius: 100%;
@@ -81,9 +87,10 @@
 	width: 5.6em;
 	border: solid black .2em;
 	margin-left: 0em;
+	box-shadow: inset -25px -25px 40px rgba(0,0,0,.7);
 }
 
-.player2 {
+#player2 {
 	z-index: 1;
 	background-color: yellow;
 	border-radius: 100%;
@@ -91,15 +98,46 @@
 	width: 5.6em;
 	border: solid black .2em;
 	margin-left: 0em;
+	box-shadow: inset -25px -25px 40px rgba(0,0,0,.7);
 }
 
+#instructions1 {
+	position: absolute;
+	font-size: 2em;
+	color: white;
+	margin-top: .4em;
+	margin-left: 8em;
+	text-shadow: -1px -1px 1px #000;
 
+}
 
+#player1Header {
+	color: blue;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 
+#player2Header {
+	color: yellow;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 
+#instructions2 {
+	position: absolute;
+	font-size: 2em;
+	color: white;
+	margin-top: .4em;
+	margin-left: 25em;
+	text-shadow: -1px -1px 1px #000;
 
-
-
+}
 
 
 

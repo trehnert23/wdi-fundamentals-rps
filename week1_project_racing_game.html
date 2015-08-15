@@ -12,20 +12,18 @@
 			<div class="field">
 				<div class="lane1">
 					<div class="player1text"><b>PLAYER 1</b></div>
-					<div class="player1"></div>
+					<div id="player1"></div>
 				</div>
 				<div class="lane2">
 					<div class="player2text"><b>PLAYER 2</b></div>
-					<div class="player2"></div>
+					<div id="player2"></div>
 				</div>
 			</div>
 			<div class="start"><b>START</b></div>
 			<div class="finish"><b>FINISH</b></div>
+			<div id="instructions1"><b id="player1Header">Player</b><b> 1 use "A"</b></div>
+			<div id="instructions2"><b id="player2Header">Player</b><b> 2 use "L"</b></div>
+
 		</div>
-		<script> function raceFunction() {
-			$(".player1").css('margin-left', '2em');
-		}
-		</script>
-		<button class="button" type="button" onclick="raceFunction()">RACE!</button>
 	</body>
 </html>
