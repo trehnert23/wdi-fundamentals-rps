@@ -1,10 +1,15 @@
+body {
+	background-color: black;
+}
+
+
 .grass {
 	width: 80em;
 	height: 40em;
 	background-color: green;
 	border: solid brown .5em;
 	border-radius: 10%;
-	box-shadow: inset -15px -15px 40px rgba(0,0,0,.5);
+	box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
 }
 
 .field {
@@ -25,7 +30,7 @@
 	-webkit-transform: rotate(-90deg);
 	margin-top: 1.9em;
 	margin-left: -1.1em;
-	text-shadow: -2px -2px 1px #000;
+	text-shadow: 2px -2px 1px #000;
 }
 
 .finish {
@@ -35,7 +40,7 @@
 	-webkit-transform: rotate(90deg);
 	margin-top: 1.9em;
 	margin-left: 7.65em;
-	text-shadow: -2px -2px 1px #000;
+	text-shadow: -2px 2px 1px #000;
 
 }
 
@@ -87,7 +92,7 @@
 	width: 5.6em;
 	border: solid black .2em;
 	margin-left: 0em;
-	box-shadow: inset -25px -25px 40px rgba(0,0,0,.7);
+	box-shadow: inset 25px 25px 40px rgba(0,0,0,.7);
 }
 
 #player2 {
@@ -98,7 +103,7 @@
 	width: 5.6em;
 	border: solid black .2em;
 	margin-left: 0em;
-	box-shadow: inset -25px -25px 40px rgba(0,0,0,.7);
+	box-shadow: inset 25px 25px 40px rgba(0,0,0,.7);
 }
 
 #instructions1 {
