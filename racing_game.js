@@ -1,17 +1,13 @@
 $(document).ready(function(){
 	var pos1 = 0;
 	var pos2 = 0;
-	// $(".button").click(function(){
-		// pos = pos + 2;
-    	// $(".player1").css('margin-left', pos + 'em')
-	// });
 	var player1 = document.getElementById('player1');
 	
 	$(document).keydown(function(event) {
 		switch (event.keyCode) {
 			case 65:
-				if(pos1<54.4){
-					pos1 = pos1 + 2;
+				if(pos1<52.51){
+					pos1 = pos1 + 1.5;
 					$("#player1").css('margin-left', pos1 + 'em');
 					break;
 				}
@@ -21,8 +17,8 @@ $(document).ready(function(){
 		};
 		switch (event.keyCode) {
 			case 76:
-				if(pos2<54.4){
-					pos2 = pos2 + 2;
+				if(pos2<52.51){
+					pos2 = pos2 + 1.5;
 					$("#player2").css('margin-left', pos2 + 'em');
 					break;
 				}
