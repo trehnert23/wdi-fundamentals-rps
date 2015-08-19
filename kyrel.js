@@ -27,12 +27,7 @@ function main(n) {
   ////                          ////
   //////////////////////////////////
 
-      for(var i=0;i<5;i++){
-          
-      }
-
-
-
+  append(7);
 
   //////////////////////////////////
   ////                          ////
@@ -54,7 +49,7 @@ function main(n) {
 
 
 row = {
-  x: 5
+  x: 7
 }
 
 colors = {
@@ -93,6 +88,16 @@ function initializeRow() {
     }
 }
 
+function append(num) {
+    var x = 0;
+    while(x<=num) {
+        $('.cells').append('<td></td>');
+        initial_state.push('');
+        x+=1;
+    }
+}
+
+
 function updateRow() {
   $("td").css('border-color', colors.gray);
   currentSquare().css('border-color', kyrel.color);
@@ -102,20 +107,47 @@ function currentSquare() {
   return $("tr").find("td").eq(kyrel.x);
 }
 
-function moveLeft() {
-  $(".instructions").append("<div>moveLeft</div>");
-  if(kyrel.x > 0) {
-    kyrel.x = kyrel.x - 1;
-    updateRow();
-  }
-}
+// function moveLeft() {
+//   $(".instructions").append("<div>moveLeft</div>");
+//   if(kyrel.x > 0) {
+//     kyrel.x = kyrel.x - 1;
+//     updateRow();
+//   }
+// }
 
-function moveRight() {
-  $(".instructions").append("<div>moveRight</div>");
-  if(kyrel.x < row.x - 1) {
-    kyrel.x = kyrel.x + 1;
-    updateRow();
+// function moveRight() {
+//   $(".instructions").append("<div>moveRight</div>");
+//   if(kyrel.x < row.x - 1) {
+//     kyrel.x = kyrel.x + 1;
+//     updateRow();
+//   }
+// }
+
+// function moveLeft(num) {
+//   $(".instructions").append("<div>moveLeft</div>");
+//   if((kyrel.x > 0)&&(num>0)) {
+//     kyrel.x = kyrel.x - num;
+//     updateRow();
+//   }
+// }
+
+// function moveRight(num) {
+//   $(".instructions").append("<div>moveRight</div>");
+//   if(kyrel.x < row.x - num) {
+//     kyrel.x = kyrel.x + num;
+//     updateRow();
+//   }
+// }
+
+function move(dir,num) {
+  if(dir==='r'){
+    kyrel.x = kyrel.x + num;
+    updateRow();  
   }
+  else if(dir==='l') {
+    kyrel.x = kyrel.x - num;
+    updateRow();
+  };
 }
 
 function draw() {

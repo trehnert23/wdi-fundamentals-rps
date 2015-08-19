@@ -29,5 +29,3 @@ $(document).ready(function(){
 	});
 
 });
-
-54.4
